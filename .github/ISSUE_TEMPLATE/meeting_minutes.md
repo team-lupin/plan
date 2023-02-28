@@ -1,3 +1,12 @@
+---
+name: 회의록
+about: 회의록
+title: "{{ date | date('MM/DD') }} 회의록"
+labels: "회의록"
+assignees: rlaqudrnr810
+
+---
+
 ## 회의 일시 / 방식 / 진행자 / 참여 인원
 - 회의 일시 : 
 - 회의 방식 : 
