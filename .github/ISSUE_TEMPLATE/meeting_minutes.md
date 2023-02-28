@@ -3,7 +3,7 @@ name: 회의록
 about: 회의록
 title: "{{ date | date('MM/DD') }} 회의록"
 labels: "회의록"
-assignees: rlaqudrnr810
+assignees: rlaqudrnr810, eunsongsong, jiyeonyh, jyyo0n
 
 ---
 
