@@ -1,0 +1,26 @@
+name: Create Weekly Meeting Munites
+on:
+  schedule:
+    - cron:  0 0 19 * * SAT
+
+jobs:
+  create_issue:
+    name: Weekly Team Meeting Minutes
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Create Meeting Munites
+        uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
+        with:
+          title: ${{ steps.date.outputs.date }} 회의록
+          assignees: "rlaqudrnr810, eunsongsong, jiyeonyh, jyyo0n"
+          labels: "회의록"
+          pinned: false
+          close-previous: false
+          template: ".github/ISSUE_TEMPLATE/generate_donelist.md"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
