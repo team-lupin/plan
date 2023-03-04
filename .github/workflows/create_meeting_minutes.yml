@@ -1,7 +1,7 @@
 name: Create Weekly Meeting Munites
 on:
   schedule:
-    - cron: '0 10 * * SAT'
+    - cron: '55 9 * * SAT'
 
 jobs:
   create_issue:
