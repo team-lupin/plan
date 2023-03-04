@@ -23,6 +23,4 @@ jobs:
           close-previous: false
           close_existing_by: label
           days_after: 1
-          template: ".github/ISSUE_TEMPLATE/generate_donelist.md"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          template: ".github/ISSUE_TEMPLATE/meeting_minutes.md"
